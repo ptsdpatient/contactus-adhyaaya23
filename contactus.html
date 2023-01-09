@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        @font-face {
+                font-family: 'Stylized';
+                src: url(Xxix-0Wgvz.ttf);
+            }
+        @font-face {
+                font-family: 'Head';
+                src: url(Metropolis-SemiBold.otf);
+            }
+        @font-face{
+                font-family: 'contentz';
+                src: url(Metropolis-Regular.otf);
+        }
+        *:focus {
+    outline: none;
+}
+
+       ::placeholder{
+        position:absolute;
+        top:5px;
+       font-family: Head;
+       color:darkgray;
+       
+       }
+       input,textarea{
+        font-family: contentz;
+        font-size:15px;
+        color:#00122b;
+        resize:none;
+       }
+        .ticket_title{
+        width:250px;
+        color:#14c8ff;
+        text-shadow: 4px 1px 10px #0b4fb4ea;
+        position:absolute;
+        font-family: Stylized;
+        font-size:30px;
+        top: 130px;
+        left:140px;
+        }
+        .message_form{
+        border-radius:20px;
+        position:absolute;
+        background-color:#001e5b80;
+        width:400px;
+        height:360px;
+        top:180px;
+        left:50px;
+        }
+        .map_title{
+        width:250px;
+        color:#14c8ff;
+        text-shadow: 4px 1px 10px #0b4fb4ea;
+        position:absolute;
+        font-family: Stylized;
+        font-size:30px;
+        top: 130px;
+        left:960px;
+        }
+        .head{
+        width:250px;
+        color:#14c8ff;
+        text-shadow: 4px 1px 10px #0b4fb4ea;
+        position:absolute;
+        font-family: Stylized;
+        font-size:40px;
+        top:40px;
+        left:480px;
+        }
+        button{
+                opacity:100%;
+                background-color: aliceblue;
+                border-style:none;
+                border-radius:5px;
+                font-size:18px;
+                width:70px;
+                height: 30px;
+                color:#0067c7;
+                box-shadow: 0em 0em 0.5em 0.0001em #20e5ff9a;
+                position:absolute;
+                font-family:contentz;
+            }
+
+            button:hover{
+                color:aliceblue;
+                transform:translateY(-0.12em);
+                background-color:#8bc7ffe8;
+                box-shadow: 0.1em 0.025em 0.6em 0.1em #20e5ff9a;
+                text-shadow: 2px 2px 2px #001a5250;
+                transition:transform,box-shadow 0.5s;
+                                
+            }
+    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>contact us</title>
+</head>
+
+<body style="background-color:#000d1f">
+    <div class="head">Contact us</div>
+     <div>
+       <canvas class="message_form"/>
+     </div>
+     <div class="ticket_title">Submit a ticket</div>
+     <div>
+        <p style="position:absolute;top:190px;left:100px;font-family: contentz;font-size:20px;color:aliceblue">name </p><input placeholder="name" style="position:absolute;border-radius:5px;border-color: #f8f8f8ea;top:208px;left:180px;width:200px;height:22px;text-indent:5px;"/>
+        <p style="position:absolute;top:240px;left:100px;font-family: contentz;font-size:20px;color:aliceblue">email </p><input placeholder="email" style="position:absolute;border-radius:5px;border-color: #f8f8f8ea;top:258px;left:180px;width:200px;height:22px;text-indent:5px;"/>
+        <p style="position:absolute;top:290px;left:100px;font-family: contentz;font-size:20px;color:aliceblue">message </p><textarea placeholder=" message" style="position:absolute;border-radius:5px;border-color: #f8f8f8ea;top:340px;left:100px;width:300px;text-indent:15px; padding: 0 0 100px 0;padding-top: 5px;
+        "></textarea>
+         <button class="ticket_submit" style="top:490px;
+         left:220px;" onclick=ticketsubmit()>submit</button>
+     </div>
+
+    <div class="map_title">Maps</div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2214.0133855650065!2d79.05863812130883!3d21.052209904527864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4be5e617378eb%3A0x682e0bc768d22adb!2sGovernment%20Engineering%20College%2CNagpur!5e0!3m2!1sen!2sin!4v1673198708695!5m2!1sen!2sin" width="350" height="350" style="position:absolute;margin-top: 170px; margin-left:820px;border-style:none;border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>       
+    
+    
+    <div id="emailform"><form ></form></div>
+  </body>
+</html>
