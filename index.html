@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+    @font-face {
+      font-family: 'style';
+      src: url(Xxix-0Wgvz.ttf);
+      }
+    @font-face {
+      font-family: 'head';
+      src: url(Metropolis-SemiBold.otf);
+      }
+    @font-face{
+      font-family: 'data';
+      src: url(Metropolis-Regular.otf);
+     }
+      
+      .title{
+        text-align: center;
+        color:#14c8ff;
+        text-shadow: 4px 1px 10px #0b4fb4ea;
+        font-family: style;
+        font-size:4vw;
+        transition:all 0.5s;
+        }
+
+        .title:hover{
+        transform:translateY(-0.2rem);
+        text-shadow: 4px 1px 10px #00364691;
+        transition:all 0.5s;
+        }
+
+      .container{
+        height:85%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;  
+        justify-content:space-evenly;
+        
+    }
+    .container > div{
+        width:30%;
+    }
+      canvas{
+      width:31%;
+      height:84%;
+      border-radius:1vw;
+      position:absolute;
+      background-color:#001e5b2b;
+      box-shadow: 0.1em 0.025em 0.4em 0.1em #20e5ff9a;
+      
+    }
+
+    @media only screen and (max-width:500px) {
+    /* Mobal phone ke liye */
+    .title{
+        font-size:7vw;
+
+    }
+
+    .container{
+        
+        flex-direction:column;
+        width:85%;
+        
+        
+        align-content:space-evenly;
+    }
+    .container >div{
+        height:30%;
+    }
+    canvas{
+        width:84%;
+        height:31%;
+    }
+   }
+
+    </style>
+    </head>
+    <body>
+        <div class="title">Contact us</div>
+        <div class="container">
+           <div><canvas/></div> 
+           <div><canvas/></div>
+           <div><canvas/></div>
+                       
+        </div>
+
+    </body>
+</html>
