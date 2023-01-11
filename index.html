@@ -16,7 +16,10 @@
       font-family: 'data';
       src: url(Metropolis-Regular.otf);
      }
-      
+     *:focus {
+      outline: none;
+  }
+
       .title{
         text-align: center;
         color:#14c8ff;
@@ -40,9 +43,11 @@
         justify-content:space-between;
         
     }
+    
     .container > div{
         width:32vw;
     }
+     
       canvas{
       width:32vw;
       height:42vw;
@@ -51,6 +56,25 @@
       box-shadow: 0.1em 0.025em 0.4em 0.1em #20e5ff9a;
       
     }
+    .form_text{
+      position:absolute;
+      font-family:data;
+      color:aliceblue;
+      font-size: 2vw;
+      text-shadow:4px 1px 10px black;
+
+    }
+    .form_text > input{
+      position:absolute;
+      background-color:aliceblue;
+      border-radius:0.51vw;
+      font-size: 1.3vw;
+      border-style:none;
+      font-family: data;
+      height:80%;
+      text-indent:4%;
+    }
+    
 
     @media only screen and (max-width:1100px) {
     /* Mobal phone ke liye */
@@ -66,6 +90,7 @@
         flex-direction:column;
         justify-content:space-between;
     }
+    
     .container >div{
         margin-top: 1.5vw;
         margin-left: 2.4vw;
@@ -79,13 +104,13 @@
     </style>
     </head>
     <body>
-        <div class="title">Contact us</div><br>
+        <div class="title">Contact us</div>
         <div class="container">
-           <div><canvas/></div> 
+           <div><div class="form_text" style="top:20%; left:3%">name :<input placeholder="name" style="left:110%;top:10%"/></div><canvas/></div> 
            <div><canvas/></div>
            <div><canvas/></div>
-                       
-        </div>
+          </div>
+
 
     </body>
 </html>
