@@ -33,47 +33,45 @@
         }
 
       .container{
+        flex-basis: 0;
         height:85%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;  
-        justify-content:space-evenly;
+        justify-content:space-between;
         
     }
     .container > div{
         width:30%;
     }
       canvas{
-      width:31%;
+      width:30%;
       height:84%;
       border-radius:1vw;
-      position:absolute;
-      background-color:#001e5b2b;
+      background-color:#001e5b80;
       box-shadow: 0.1em 0.025em 0.4em 0.1em #20e5ff9a;
       
     }
 
-    @media only screen and (max-width:500px) {
+    @media only screen and (max-width:1200px) {
     /* Mobal phone ke liye */
     .title{
-        font-size:7vw;
+        font-size:8vw;
 
     }
 
     .container{
         
         flex-direction:column;
-        width:85%;
-        
-        
-        align-content:space-evenly;
+        width:10%;
+        justify-content:space-between;
     }
     .container >div{
-        height:30%;
+        height:10%;
     }
     canvas{
-        width:84%;
-        height:31%;
+        width:90vw;
+        height:32%;
     }
    }
 
