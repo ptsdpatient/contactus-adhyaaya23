@@ -34,7 +34,6 @@
 
       .container{
         flex-basis: 0;
-        height:85%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;  
@@ -42,20 +41,22 @@
         
     }
     .container > div{
-        width:30%;
+        width:32vw;
     }
       canvas{
-      width:30%;
-      height:84%;
+      width:32vw;
+      height:42vw;
       border-radius:1vw;
       background-color:#001e5b80;
       box-shadow: 0.1em 0.025em 0.4em 0.1em #20e5ff9a;
       
     }
 
-    @media only screen and (max-width:1200px) {
+    @media only screen and (max-width:1100px) {
     /* Mobal phone ke liye */
+
     .title{
+        margin-top:1vw;
         font-size:8vw;
 
     }
@@ -63,22 +64,22 @@
     .container{
         
         flex-direction:column;
-        width:10%;
         justify-content:space-between;
     }
     .container >div{
-        height:10%;
+        margin-top: 1.5vw;
+        margin-left: 2.4vw;
     }
     canvas{
         width:90vw;
-        height:32%;
+        height:50vw;
     }
    }
 
     </style>
     </head>
     <body>
-        <div class="title">Contact us</div>
+        <div class="title">Contact us</div><br>
         <div class="container">
            <div><canvas/></div> 
            <div><canvas/></div>
