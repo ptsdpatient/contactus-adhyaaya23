@@ -16,6 +16,8 @@
       font-family: 'data';
       src: url(Metropolis-Regular.otf);
      }
+    
+
      *:focus {
       outline: none;
   }
@@ -96,7 +98,18 @@
       text-shadow:4px 1px 10px black;
 
     }
-    
+    #cfn{
+    top:12vh;
+    left:3vw
+   }
+   #cfe{
+    top:25vh;
+    left:3vw
+   }
+   #cfm{
+    top:35vh;
+    left:3vw
+   }
     .form_input {
      position:absolute;
       background-color:aliceblue;
@@ -109,29 +122,42 @@
       text-indent:4%;
     }
 
+
     @media only screen and (max-width:1100px),screen and (max-height:500px){
     /* Mobal phone ke liye */
-
+   
+   /*  Hides first canva
+    .mobile_hide{
+      display:none;
+    }
+    */
     .title{
-        margin-top:1vw;
+        margin-top:1vh;
         font-size:8vw;
 
     }
-
     .container{
         
         flex-direction:column;
-        justify-content:space-between;
+        justify-content:space-evenly;
     }
     
     .container >div{
-        margin-top: 1.5vw;
+        margin-top: 1.5vh;
         margin-left: 2.4vw;
     }
     canvas{
         width:90vw;
-        height:50vw;
+        height:45vw;
     }
+   #cfn{
+    font-size:4vw;
+
+    top:10px;
+    left:3vw;
+    padding:10%;
+   }
+
    }
 
     </style>
@@ -140,10 +166,10 @@
         <div class="title">Contact us</div>
         <div class="container">
            
-          <div>
-            <p class="form_text" style="top:12vh;left:3vw">name :</p><input class="form_input" placeholder="name" style="left:10%;top:18.5%"/>   
-            <p class="form_text" style="top:25%;left:3%">email :</p><input class="form_input" placeholder="email" style="left:10%;top:28.5%"/> 
-            <p class="form_text" style="top:35%;left:3%">message :</p><input class="form_input" placeholder="message" style="left:10%;top:28.5%"/>       
+            <div class="mobile_hide">
+            <p id="cfn" class="form_text" style="top:12vh;left:3vw">name :</p><input class="form_input" placeholder="name" style="left:10vw;top:18.5vh"/>   
+            <p id="cfe" class="form_text" style="top:25vh;left:3vw">email :</p><input class="form_input" placeholder="email" style="left:10vw;top:28.5vh"/> 
+            <p id="cfm" class="form_text" style="top:35vh;left:3vw">message :</p><input class="form_input" placeholder="message" style="left:10vw;top:28.5vh"/>       
             <button style="top:50%;left:3%">submit</button>
              <canvas/>
           </div> 
