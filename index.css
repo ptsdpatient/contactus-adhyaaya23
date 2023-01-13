@@ -189,6 +189,11 @@
     display:none;
   }
   */
+ 
+  body::-webkit-scrollbar { 
+    display: none;  
+  }
+  
   .title{
       margin-top:1vh;
       font-size:8vw;
