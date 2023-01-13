@@ -213,47 +213,79 @@
       width:70vw;
       height:45vw;
   }
+  .form_text{
+    font-size:3vw;
+  }
+  .form_input{
+  font-size:2vw;
+  height:2vh;
+  width:40vw;
+  }
+  textarea{
+    width:50vw;
+    height:5vh;
+    font-size:3vw;
+    padding-top: 1vh;
+    padding-left:2vw;
+  }
+  textarea::placeholder{
+    font-size:2vw;
+  }
+   
+  button{
+    font-size:2vw;
+    width:10vw;
+    height:3vh;
+
+  }
+  
   #cs1{
-    font-size: 10vw;;
-    top:10vh;
-    left:5vw;
+    font-size: 5vw;
+    top:6vh;
+    left:30vw;
   }
   #cs2{
-    top:10vh;
-    left:40vw;
+    font-size: 5vw;
+    top:37vh;
+    left:33vw;
   }
   #cs3{
-    top:10vh;
-    left:80vw;
+    font-size:5vw;
+    top:68vh;
+    left:45vw;
   }
 
   #ct1{
-    top:23vh;
-    left:3vw
+    
+    top:12vh;
+    left:20vw
   }
   #ct2{
-    top:31.5vh;
-    left:3vw
+    
+    top:16vh;
+    left:20vw
   }
   #ct3{
-    top:40vh;
-    left:3vw
+    
+    top:20vh;
+    left:20vw
   }
   #ci1{
-    left:10vw;
-    top:26vh
+    left:30vw;
+    top:14vh
   }
   #ci2{
-    left:10vw;
-    top:35vh
+    left:30vw;
+    top:18vh
   }
   #ci3{
-    left:3vw;
-    top:51vh;
+    left:20vw;
+    top:25vh;
+    
   }
  #cb1{
-  top:85vh;
-  left:13.5vw
+  top:33vh;
+  left:42vw;
  }
 
  }
