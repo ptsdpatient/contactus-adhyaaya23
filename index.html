@@ -21,6 +21,8 @@
      *:focus {
       outline: none;
   }
+     
+      
 
       .title{
         text-align: center;
@@ -31,6 +33,14 @@
         transition:all 0.5s;
         }
 
+        .subtitle{
+        position:absolute;
+        color:#14c8ff;
+        text-shadow: 4px 1px 10px #0b4fb4ea;
+        font-family: style;
+        font-size:3vw;
+        
+        }
         .title:hover{
         transform:translateY(-0.2rem);
         text-shadow: 4px 1px 10px #00364691;
@@ -90,6 +100,27 @@
       box-shadow: 0.1em 0.025em 0.4em 0.1em #20e5ff9a;
       
     }
+    textarea{
+      position:absolute;
+      background-color:aliceblue;
+      border-radius: 1.2vh;
+      border-style:none;
+      left:3vw;
+      top:48vh;
+      width:25vw;
+      height:28vh;
+      padding-top: 2vh;
+      padding-left:2vw;
+      resize:none;
+      overflow-y: hidden;
+      font-family: data;
+      font-size:1.3vw;
+    }
+    textarea::placeholder{
+      font-size: 1.3vw;
+      font-family:data;
+    }
+
     .form_text{
       position:absolute;
       font-family:data;
@@ -110,8 +141,9 @@
     top:35vh;
     left:3vw
    }
+   
     .form_input {
-     position:absolute;
+      position:absolute;
       background-color:aliceblue;
       border-radius:0.51vw;
       font-size: 1.3vw;
@@ -121,7 +153,7 @@
       width:20vw;
       text-indent:4%;
     }
-
+    
 
     @media only screen and (max-width:1100px),screen and (max-height:500px){
     /* Mobal phone ke liye */
@@ -164,15 +196,20 @@
     </head>
     <body>
         <div class="title">Contact us</div>
+        <div >
+          <p class ="subtitle" style="top:10vh;left:5vw;">submit a ticket</p>
+          <p class ="subtitle" style="top:10vh;left:40vw;">Lorem ipsum</p>
+          <p class ="subtitle" style="top:10vh;left:80vw;">map</p>
+        </div>
         <div class="container">
-           
             <div class="mobile_hide">
-            <p id="cfn" class="form_text" style="top:12vh;left:3vw">name :</p><input class="form_input" placeholder="name" style="left:10vw;top:18.5vh"/>   
-            <p id="cfe" class="form_text" style="top:25vh;left:3vw">email :</p><input class="form_input" placeholder="email" style="left:10vw;top:28.5vh"/> 
-            <p id="cfm" class="form_text" style="top:35vh;left:3vw">message :</p><input class="form_input" placeholder="message" style="left:10vw;top:28.5vh"/>       
-            <button style="top:50%;left:3%">submit</button>
+            <p id="tfn" class="form_text" style="top:22vh;left:3vw">name </p><input class="form_input" placeholder="name" style="left:10vw;top:26vh"/>   
+            <p id="tfe" class="form_text" style="top:30vh;left:3vw">email </p><input class="form_input" placeholder="email" style="left:10vw;top:33.5vh"/> 
+            <p id="tfm" class="form_text" style="top:38vh;left:3vw">message </p><textarea placeholder="message"></textarea>
+            <button style="top:85vh;left:13.5vw">submit</button>
              <canvas/>
           </div> 
+
            <div><canvas/></div>
            <div><canvas/></div>
           </div>
