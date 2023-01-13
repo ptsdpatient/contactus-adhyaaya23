@@ -56,7 +56,7 @@
       width:32vw;
   }
    
-  button{
+   button{
     position:absolute;
     opacity:100%;
     background-color: aliceblue;
@@ -69,9 +69,9 @@
     box-shadow: 0em 0em 0.5em 0.0001em #20e5ff9a;
     position:absolute;
     font-family:data;
-    transition:transform,all 0.5s;
+    transition:transform,all 0.03s;
   }
-  button:hover{
+   button:hover{
     color:aliceblue;
     transform:translateY(-0.12em);
     background-color:#309bffe8;
@@ -80,8 +80,7 @@
     transition:transform,all 0.5s;
                     
 }
-button:active{
- 
+   button:active{
     transform:translateY(0.12em);
     background-color:#309bff6f;
     box-shadow: 0.1em 0.025em 0.5em 0.1em #20e5ff9a;
@@ -101,8 +100,7 @@ button:active{
     background-color:aliceblue;
     border-radius: 1.2vh;
     border-style:none;
-    left:3vw;
-    top:51vh;
+  
     width:25vw;
     height:28vh;
     padding-top: 2vh;
@@ -125,19 +123,7 @@ button:active{
     text-shadow:4px 1px 10px black;
 
   }
-  #cfn{
-  top:12vh;
-  left:3vw
- }
- #cfe{
-  top:25vh;
-  left:3vw
- }
- #cfm{
-  top:35vh;
-  left:3vw
- }
- 
+  
   .form_input {
     position:absolute;
     background-color:aliceblue;
@@ -150,6 +136,50 @@ button:active{
     text-indent:4%;
   }
   
+  #cs1{
+    top:10vh;
+    left:5vw;
+  }
+  #cs2{
+    top:10vh;
+    left:40vw;
+  }
+  #cs3{
+    top:10vh;
+    left:80vw;
+  }
+
+  #ct1{
+    top:23vh;
+    left:3vw
+  }
+  #ct2{
+    top:31.5vh;
+    left:3vw
+  }
+  #ct3{
+    top:40vh;
+    left:3vw
+  }
+  #ci1{
+    left:10vw;
+    top:26vh
+  }
+  #ci2{
+    left:10vw;
+    top:35vh
+  }
+  #ci3{
+    left:3vw;
+    top:51vh;
+  }
+ #cb1{
+  top:85vh;
+  left:13.5vw
+ }
+
+
+
 
   @media only screen and (max-width:1100px),screen and (max-height:650px){
   /* Mobal phone ke liye */
@@ -172,18 +202,53 @@ button:active{
   
   .container >div{
       margin-top: 1.5vh;
-      margin-left: 2.4vw;
+      margin-left: 14vw;
   }
   canvas{
-      width:90vw;
+      width:70vw;
       height:45vw;
   }
- #cfn{
-  font-size:4vw;
+  #cs1{
+    font-size: 10vw;;
+    top:10vh;
+    left:5vw;
+  }
+  #cs2{
+    top:10vh;
+    left:40vw;
+  }
+  #cs3{
+    top:10vh;
+    left:80vw;
+  }
 
-  top:10px;
-  left:3vw;
-  padding:10%;
+  #ct1{
+    top:23vh;
+    left:3vw
+  }
+  #ct2{
+    top:31.5vh;
+    left:3vw
+  }
+  #ct3{
+    top:40vh;
+    left:3vw
+  }
+  #ci1{
+    left:10vw;
+    top:26vh
+  }
+  #ci2{
+    left:10vw;
+    top:35vh
+  }
+  #ci3{
+    left:3vw;
+    top:51vh;
+  }
+ #cb1{
+  top:85vh;
+  left:13.5vw
  }
 
  }
