@@ -246,7 +246,11 @@
     height:3vh;
 
   }
-  
+  .map_layout{
+  width:80vw;
+  height:70vw;
+  }
+
   #cs1{
     
     
