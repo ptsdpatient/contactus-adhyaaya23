@@ -135,7 +135,15 @@
     width:20vw;
     text-indent:4%;
   }
-  
+  .map_layout{
+    width:32vw;
+    height:85vh;
+    top:100vh;
+    left:100vw;
+    border-radius: 1vw;
+    background-color:#001e5b80;
+    box-shadow: 0.1em 0.025em 0.4em 0.1em #20e5ff9a;
+  }
   #cs1{
     top:10vh;
     left:5vw;
@@ -184,11 +192,11 @@
   @media only screen and (max-width:1100px),screen and (max-height:650px){
   /* Mobal phone ke liye */
  
- /*  Hides first canva
+ /*  Hides first canva */
   .mobile_hide{
     display:none;
   }
-  */
+  
  
   body::-webkit-scrollbar { 
     display: none;  
@@ -207,11 +215,11 @@
   
   .container >div{
       margin-top: 1.5vh;
-      margin-left: 14vw;
+      margin-left: 7vw;
   }
   canvas{
-      width:70vw;
-      height:45vw;
+      width:80vw;
+      height:70vw;
   }
   .form_text{
     font-size:3vw;
@@ -240,18 +248,21 @@
   }
   
   #cs1{
+    
+    
     font-size: 5vw;
-    top:6vh;
-    left:30vw;
+    margin-top:7vw;
+    margin-left:20vw;
   }
   #cs2{
-    font-size: 5vw;
-    top:37vh;
-    left:33vw;
+    font-size: 7vw;
+    margin-top:5%;
+    margin-left:-11vw;
+  
   }
   #cs3{
-    font-size:5vw;
-    top:68vh;
+    font-size:7vw;
+    margin-top:75%;
     left:45vw;
   }
 
