@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+ 
+   body{
+    background-color:#140228;
+    background-repeat: no-repeat;
+    background-size: cover;
+       
+}
+
+   .select_event_title{
+    top: 5vh;
+    left:10.4vw;
+    position:absolute;
+    border-radius:10px;
+    height:2.3vw;
+    text-align: left;
+    text-indent: 1vw;
+    width:17vw;
+    font-size: 1.5vw;
+    opacity:100%;
+    background-color: aliceblue;
+    border-style:none;
+    font-size:1.5vw;
+    color:#014ac8da;
+    font-family:Arial, sans-serif;
+    transition:transform,all 0.5s;
+   }
+   .select_event_title:hover{
+    text-align: left;
+    color:aliceblue;
+    text-indent: 1vw;
+    background-color:#309bffc1;
+    text-shadow: 2px 2px 2px #001a5250;
+    transition:transform,all 0.5s;
+   }
+
+  .select_event{
+    margin-top: 10vh;
+    margin-left: 10vw;
+    display:none;
+    flex-flow:column;
+    
+  }
+  .select_event > input{
+    height:2vw;
+    text-align: left;
+    margin-top: 1px;
+    width:17vw;
+    font-size: 1.5vw;
+    opacity:100%;
+    background-color: aliceblue;
+    border-style:none;
+    font-size:1.5vw;
+    color:#1364b0d5;
+    text-indent: 0vw;
+    font-family:Arial, sans-serif;
+    transition:transform,all 0.5s;
+  }
+  .select_event > input:hover{
+    text-align: left;
+    width:17.3vw;
+    color:aliceblue;
+    text-indent: 1vw;
+    background-color:#309bffe8;
+    text-shadow: 2px 2px 2px #001a5250;
+    transition:transform,all 0.5s;
+  }
+  .select_event > input:active{
+    background-color:#309bff6f;
+    transition:transform,all 0.1s;
+  }
+    </style>
+
+    </head>
+    <body>
+ <script>
+  function hide_select(hide_id,value) {
+    var select = document.getElementById(hide_id);
+    if(!(value=='')) document.getElementById("button").value=value;
+    if(select.style.display=='') select.style.display='flex';
+    else select.style.display='';
+}
+ </script>
+ 
+ <input class="select_event_title" id="button" type="submit" value="Select Event" onclick="hide_select('select_event_div','')"> 
+ <div id="select_event_div" class="select_event">
+    <input id="sv1" type="submit" style="border-top-right-radius:10px;border-top-left-radius:10px;" value="Avishkar" onclick="hide_select('select_event_div','Avishkar')"> 
+    <input id="sv2" type="submit" value="Caddiction" onclick="hide_select('select_event_div','Caddiction')"> 
+    <input id="sv3" type="submit" value="Virtual Placement" onclick="hide_select('select_event_div','Virtual Placement')">
+    <input id="sv4" type="submit" value="Code Venture" onclick="hide_select('select_event_div','Code Venture')"> 
+    <input id="sv5" type="submit" value="Bridge-o-craft" onclick="hide_select('select_event_div','Bridge-o-craft')">
+    <input id="sv6" type="submit" value="Robo race" onclick="hide_select('select_event_div','Robo race')">
+    <input id="sv7" type="submit" value="Vaad vivad" onclick="hide_select('select_event_div','Vaad vivad')">
+    <input id="sv8" type="submit" value="Born-Psychos" onclick="hide_select('select_event_div','Born-Psychos')">
+    <input id="sv9" type="submit" value="Food-o-holics" onclick="hide_select('select_event_div','Food-o-holics')">
+    <input id="sv10" type="submit" value="Cricbash" onclick="hide_select('select_event_div','Cricbash')"> 
+    <input id="sv11" type="submit" value="CAD-o-shop" onclick="hide_select('select_event_div','CAD-o-shop')"> 
+    <input id="sv12" type="submit" value="Jigyasa" onclick="hide_select('select_event_div','Jigyasa')"> 
+    <input id="sv13" type="submit" value="stargaze" onclick="hide_select('select_event_div','stargaze')"> 
+    <input id="sv14" type="submit" style="border-bottom-right-radius:10px;border-bottom-left-radius:10px;" value="build-a-bot" onclick="hide_select('select_event_div','build-a-bot')">  
+</div>
+
+     
+    </body>
+</html>
